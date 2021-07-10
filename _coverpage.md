@@ -1,6 +1,10 @@
-#  MyBlogs
+#  MyDocs
 
-> 后退！我要装逼了！ 
+> Daily study notes
 
-[一个沙雕的个人博客,点这里访问我的GitHub](https://github.com/Lummer-Li) [点这里访问GitHUb项目地址](https://github.com/Lummer-Li/docs)
+If you are interested, you can check and exchange
+
+qq: 744807252
+
+[Github](https://github.com/Lummer-Li) [Getting Started](/?id=headline)
 
