@@ -11,15 +11,21 @@
 </head>
 
 <body>
-  <div id="app"></div>
+	<nav>
+	    <a href="#/">EN</a>
+	    <a href="#/zh-cn/">中文</a>
+	</nav>
+  <div id="app">Please wait...</div>
   <script>
     window.$docsify = {
-	  mode: 'history',
-      name: '',
-      repo: '',
-      // loadSidebar: true,
-      coverpage: true,
-	  // 完整配置参数
+		// routerMode: 'history',
+		relativePath: true,
+		name: '',  
+		repo: 'https://github.com/Lummer-Li/docs/',
+		auto2top: true,
+		// loadSidebar: true,
+		coverpage: true,
+		// 完整配置参数
 		search: {
 		  maxAge: 86400000,               // 过期时间，单位毫秒，默认一天
 		  paths: [],                      // or 'auto'，匹配文件路径
