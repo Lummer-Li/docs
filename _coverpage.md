@@ -2,5 +2,5 @@
 
 > 后退！我要装逼了！ 
 
-[一个沙雕的个人博客,点这里访问我的GitHub](github.com/A1walker) [点这里访问GitHUb项目地址](https://github.com/A1walker/Blogs)
+[一个沙雕的个人博客,点这里访问我的GitHub](https://github.com/Lummer-Li) [点这里访问GitHUb项目地址](https://github.com/Lummer-Li/docs)
 
