@@ -13,11 +13,17 @@
 
 ### 2、视口的常见设置 (了解)
 
-![02 - 视口的常见设置](https://gitee.com/Lummer/image/raw/master/img/20210720222627.png)
+| 视口的常见设置     |                                                              |
+| ------------------ | ------------------------------------------------------------ |
+| width=device-width | 视口的宽度, 大多手机浏览器视口的宽度是980.<br>device-width表示采用设备的宽度<br>例如: 手机是5.5寸, 那么视口也采用5.5寸宽度 |
+| initial-scale=1    | 移动设备上, 打开页面时的初始化缩放级别<br/>取值: 1-5<br/>1表示100%, 5表示500% |
+| minimum-scale=1    | 移动设备上, 页面可以最小缩放的级别                           |
+| maximum-scale=1    | 移动设备上, 页面可以最大缩放的级别                           |
+| user-scalable=no   | 移动设备上, 页面禁止缩放<br>如果设置“user-scalable=no”, 则“minimum-scale”和“maximum-scale”无效 |
 
 ### 3、Bootstrap 环境搭建
 
-![03 - bootstrap 环境搭建](https://gitee.com/Lummer/image/raw/master/img/20210720222613.jpeg)
+![截屏2021-07-31 下午11.37.45](https://gitee.com/Lummer/image/raw/master/img/20210731233759.png)
 
 ### 4、布局容器
 
