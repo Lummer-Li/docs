@@ -395,18 +395,14 @@ https://github.com/spring-projects/spring-boot/wiki#release-notes
 			- 配置类组件之间有依赖关系, 方法会被调用得到之前单实例组件, 用Full模式
 
 	```java
-	#############################Configuration使用示例######################################################
-	/**
-	 * 1、配置类里面使用@Bean标注在方法上给容器注册组件,默认也是单实例的
-	 * 2、配置类本身也是组件
-	 * 3、proxyBeanMethods：代理bean的方法
-	 *      Full(proxyBeanMethods = true)、[保证每个@Bean方法被调用多少次返回的组件都是单实例的]
-	 *      Lite(proxyBeanMethods = false)[每个@Bean方法被调用多少次返回的组件都是新创建的]
-	 *      组件依赖必须使用Full模式默认.其他默认是否Lite模式
-	 *
-	 *
-	 *
-	 */
+	// ############################Configuration使用示例######################################################
+	// 1、配置类里面使用@Bean标注在方法上给容器注册组件,默认也是单实例的
+	// 2、配置类本身也是组件
+	// 3、proxyBeanMethods：代理bean的方法
+	//   Full(proxyBeanMethods = true)、[保证每个@Bean方法被调用多少次返回的组件都是单实例的]
+	//   Lite(proxyBeanMethods = false)[每个@Bean方法被调用多少次返回的组件都是新创建的]
+	//   组件依赖必须使用Full模式默认.其他默认是否Lite模式
+	
 	@Configuration(proxyBeanMethods = false) //告诉SpringBoot这是一个配置类 == 配置文件
 	public class MyConfig {
 	
@@ -429,7 +425,7 @@ https://github.com/spring-projects/spring-boot/wiki#release-notes
 	}
 	
 	
-	################################@Configuration测试代码如下########################################
+	/* ################################@Configuration测试代码如下######################################## */
 	@SpringBootConfiguration
 	@EnableAutoConfiguration
 	@ComponentScan("com.atguigu.boot")
@@ -454,7 +450,7 @@ https://github.com/spring-projects/spring-boot/wiki#release-notes
 	        System.out.println("组件："+(tom01 == tom02)).
 	
 	
-	        //4、com.atguigu.boot.config.MyConfig$$EnhancerBySpringCGLIB$$51f1e1ca@1654a892
+	        /* 4、com.atguigu.boot.config.MyConfig$$EnhancerBySpringCGLIB$$51f1e1ca@1654a892 */
 	        MyConfig bean = run.getBean(MyConfig.class).
 	        System.out.println(bean).
 	
@@ -470,12 +466,10 @@ https://github.com/spring-projects/spring-boot/wiki#release-notes
 	
 	        System.out.println("用户的宠物："+(user01.getPet() == tom)).
 	
-	
-	
 	    }
 	}
 	```
-
+	
 2. @Bean、@Component、@Controller、@Service、@Repository
 
 3. @ComponentScan、@Import
